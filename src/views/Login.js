@@ -12,7 +12,7 @@ export default function Login({logMeIn}) {
         const password = e.target.password.value;
         
 
-        const url = 'http://localhost:5000/api/login'
+        const url = 'http://127.0.0.1:5000/api/login'
         const options = {
             method: "POST",
             headers: {
@@ -35,9 +35,9 @@ export default function Login({logMeIn}) {
         <div>
             <h1>Log In</h1>
             <form onSubmit={handleSubmit}>
-                <input name='username' />
-                <input name='password' type='password' />
-                <button type='submit'>Sign Up</button>
+                <input name='username' placeholder='Username' />
+                <input name='password' type='password' placeholder='Password'/>
+                <button type='submit'>Log In</button>
 
 
             </form>
